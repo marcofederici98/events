@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/homepage.css">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <center> <img src="./static/assets/iconv0.png" alt="Events Manager icon">
+        <h1>Events Manager</h1> </center>
+      </div>
+      <p>Carica la lista invitati in formato csv o excel</p>
+<form method="POST" action="/events" enctype="multipart/form-data">
+  <input type="file" name="data_file" accept=".xls,.xlsx,.csv">
+  <button type="submit">Upload CSV</button>
+</form>
+<div class="tooltip">Info 
+  <span class="tooltiptext">Il file deve contenere nome e cognome nelle prime due colonne</span>
+</div>
+<div class="tooltip">Credits
+  <span class="tooltiptext">Creator: Marco Federici <br>Contributor: Manuel Marinaro</span>
+</div>
+  </body>
+</html>
