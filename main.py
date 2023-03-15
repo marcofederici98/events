@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import functions
 import pandas as pd
+import _mysql_connector
 
 app = Flask(__name__, template_folder="templates")
 
